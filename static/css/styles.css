@@ -9,12 +9,22 @@
     font-family: Poppins, sans-serif;
 }
 
+.swal2-confirm  {
+    background-color: #cf2cff !important;
+
+}
+
+.swal2-title {
+    color: #cf2cff !important;
+}
+
+
 body {
-    background-color: #101010 !important;
+    background-color: #101010;
 }
 
 .menu-active {
-    color: #cf2cff;
+    color: #cf2cff !important;
     // border-bottom: 3px solid;
     // border-bottom-color: #cf2cff;"
 }
@@ -29,11 +39,21 @@ body {
     width: 100%;
 }
 
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:hover {
+    color: #cf2cff;
+}
+
 .topbar-title {
     font-size: 30px;
     line-height: 80px;
     margin: 1rem;
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #ffffff;
     font-weight: bold;
     font-family: Poppins, sans-serif;
 }
@@ -54,7 +74,7 @@ body {
 }
 
 .topbar-items a:hover {
-    color: #cf2cff;
+    color: #e600ff;
 }
 
 #main-content {
@@ -81,6 +101,8 @@ body {
     height: 280px;
     width: 280px;
     user-input: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 #shop-now-btn {
@@ -96,15 +118,365 @@ body {
     border-color: #e829ff;
 }
 
+#shop-now-btn:active {
+    background-color: #83008d;
+    border-color: #83008d;
+}
+
+#my-candies-logo2 {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#menu2 a {
+    color: white;
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+#menu2 a:hover {
+    color: #cf2cff;
+}
+
+#header2 {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #070006;
+    border-bottom: 1px solid #cf2cff;
+}
+
+#menu2{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+
 #produtos h1, #contact h1, #news h1, #about h1{
-    margin: 1rem auto 2rem auto; // margin: top=1rem right=auto bottom=2rem left=auto;
+    margin: 1rem auto 2rem auto; /* margin: top=1rem right=auto bottom=2rem left=auto; */
     text-align: center;
 }
 
 
-@media (max-width: 600px) {
+.products h1 {
+    font-size: 24px;
+}
+
+.products {
+    display: inline-block;
+    border: 2px solid #cf2cff;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    width: 18rem;
+    height: auto;
+}
+
+.products img {
+    pointer-events: none;
+    user-select: none;
+    user-input: none;
+}
+
+.buy-candy-btn {
+    background-color: #101010;
+    font-size: 20px;
+    border-radius: 1rem;
+    color: white;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.buy-candy-btn:hover {
+    background-color: #cf2cff;
+    cursor: pointer;
+    border: none;
+
+}
+
+.buy-candy-btn:active {
+    background-color: #9220b4;
+}
+
+.news-container {
+    border: 2px solid #cf2cff;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1.4rem;
+    width: 32rem;
+    height: auto;
+    margin: auto auto 1rem;
+}
+
+.news-container img {
+    margin-bottom: 1.5rem;
+}
+
+#mail-me {
+    text-align: center;
+    margin: auto;
+}
+
+#contato {
+    padding: 1rem;
+    margin: auto;
+    border: 2px solid #cf2cff;
+    border-radius: 1rem;
+    width: 32rem;
+    height: 23.5rem;
+}
+
+#nossa-historia {
+    border: 2px solid #cf2cff;
+    border-radius: 1rem;
+    width: 22rem;
+    height: 26rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contato input[type="text"], #contact textarea, #contact input[type="email"] {
+    background-color: #363636;
+    border: 1px solid #cf2cff;
+    border: none;
+    text-align: center;
+    border-radius: 0.4rem;
+}
+
+#contato input[type="submit"] {
+    background-color: #101010;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 4rem;
+}
+
+#contato input[type="submit"]:hover {
+    background-color: #cf2cff;
+    border: none;
+    cursor: pointer;
+}
+
+#social-media {
+    border: 2px solid #cf2cff;
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2rem;
+    width: 32rem;
+    heigth: 26rem;
+    padding: 1rem;
+
+}
+
+#social-media a:hover {
+    color: #cf2cff;
+}
+
+#social-media li {
+    list-style: none;
+}
+
+#our-team {
+    text-align: center;
+    border: 2px solid #cf2cff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto;
+    width: 22rem;
+    height: 24.5rem;
+}
+
+
+#our-team .subtitle {
+    padding-bottom: 1.5rem;
+    user-input: none;
+    user-select: none;
+}
+
+#our-team a:hover {
+    color: #cf2cff;
+}
+
+#mycandies-history {
+    text-align: left;
+    margin: auto;
+    padding: 1rem;
+    height: 200px;
+    width: auto;
+    color: white;
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+@media (max-width: 660px) {
     .topbar-title {
+        font-size: 24px;
         text-align: center;
     }
 
+    #menu.topbar-items li {
+        width: 100%;
+        display: inline;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    #mycandies-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        height: 200px;
+        width: 200px;
+        user-input: none;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .products {
+        display: block;
+        border: 2px solid #cf2cff;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 18rem;
+        height: 28rem;
+    }
+    #menu2 a:hover {
+        color: white;
+        background-color: #cf2cff;
+    }
+
+    .news-container {
+        border: 2px solid #cf2cff;
+        border-radius: 1rem;
+        text-align: center;
+        margin: auto auto 1.5rem;
+        padding: 1rem;
+        width: 18rem;
+        height: auto;
+    }
+
+    #contato {
+        padding: 1rem;
+        margin: auto;
+        border: 2px solid #cf2cff;
+        border-radius: 1rem;
+        width: 18rem;
+        height: 24rem;
+    }
+
+    #contato textarea {
+        height: 160px;
+        width: 16rem;
+    }
+
+    #social-media {
+        border: 2px solid #cf2cff;
+        border-radius: 1rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.2rem;
+        width: 18rem;
+        heigth: 27rem;
+        padding: 1rem;
+
+    }
+
+    #our-team {
+        text-align: center;
+        border: 2px solid #cf2cff;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: auto;
+        width: 18rem;
+        height: 25rem;
+    }
+
+    #nossa-historia {
+        text-align: center;
+        border: 2px solid #cf2cff;
+        border-radius: 1rem;
+        padding: 0.2rem;
+        margin: auto;
+        width: 18rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #our-team h1 {
+        font-size: 28px
+    }
+
+    #mycandies-history {
+        width: 300px;
+        height: 180px;
+    }
+
+    #btn-mobile {
+        display: block;
+        padding: 0.5rem;
+        color: white;
+        background-color: #070006;
+        border: none;
+    }
+
+    #menu2 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: #070006;
+        height: 0;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+
+    #menu2 a:hover {
+        background-color: #cf2cff;
+    }
+
+    #navbar.active i.material-icons {
+        color: #cf2cff;
+    }
+
+    #navbar.active #menu2 {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .menu-active {
+        color: white !important;
+        background-color: #9220b4;
+    }
 }
