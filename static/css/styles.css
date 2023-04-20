@@ -478,4 +478,8 @@ body {
         color: white !important;
         background-color: #9220b4;
     }
+
+    #main-content {
+        margin-top: 8rem;
+    }
 }
