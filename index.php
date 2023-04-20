@@ -45,7 +45,7 @@
     </header>
     <div id="main-content">
         <div id="introduction">
-            <img src="static/imgs/mycandies.png" id="mycandies-logo" alt="Main Logo">
+            <img src="static/imgs/mycandies.png" id="mycandies-logo" alt="MyCandies Logo">
             <p class="subtitle">More than a candy shop</p>
         </div>
         <a href="views/produtos.php" id="shop-now-btn" class="btn btn-primary">Compre agora! </a>
